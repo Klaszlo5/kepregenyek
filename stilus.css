@@ -1,0 +1,71 @@
+*{
+    box-sizing: content-box;
+    color: rgb(235, 143, 168);
+    background-color: rgb(102, 115, 153);
+}
+
+main,header,footer,article,nav{
+    border:1px solid grey;
+}
+
+header{
+    background-image: url(kepek/header.jpg);
+    height: 250px;
+    background-size: cover;
+	padding: 20px;
+	margin:30px;
+	text-align:center;
+	text-transform: uppercase;
+	color:grey;
+	font-family: 'Brush Script MT', cursive;
+	color: black;
+}
+.kep{
+    width: 50%;
+    margin-top: 10px;margin-bottom: 10px;
+    border:1px solid rgb(255, 255, 255);
+}
+.kepek{
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav{
+    width: 100%;
+    background-color: grey;
+}
+nav div{
+    display: flex;
+    justify-content: center;
+    gap:15px;
+	margin:20px;
+}
+nav div a{
+    color: white;
+    font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Brush Script MT', cursive;
+    font-size: x-large;
+    text-decoration:none;
+}
+nav div a:hover{
+    color: rgb(101, 241, 82);
+}
+footer{
+    background-color: 	rgb(102, 128, 153);
+    text-align: center;
+}
+
+@media screen and (max-width:600px){
+    header{
+        width: 50%;
+        height: 400px;
+        background-size: cover;
+    }
+    nav div{
+        flex-direction: column;
+        text-align: center;
+    }
+}
